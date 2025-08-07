@@ -1,0 +1,30 @@
+ 1. ¿Qué es HTML, cuándo fue creado, cuáles fueron las distintas versiones y cuál es la última?*
+
+HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Fue creado por Tim Berners-Lee en 1991. Las principales versiones han sido:  
+- HTML 1.0 (1991)  
+- HTML 2.0 (1995)  
+- HTML 3.2 (1997)  
+- HTML 4.01 (1999)  
+- XHTML 1.0 (2000)  
+- HTML5 (2014, última versión estable y recomendada)
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos con HTML?
+- Separar el contenido de la presentación (usar CSS para estilos)  
+- Usar etiquetas semánticas para describir la estructura  
+- Seguir estándares y buenas prácticas para accesibilidad  
+- Escribir código limpio y válido  
+- Utilizar metadatos apropiados
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y obsoleto? 
+- Desaprobado (deprecated): Se desaconseja su uso porque puede eliminarse en futuras versiones, aunque sigue funcionando.  
+- Obsoleto (obsolete): Ya no se admite y puede no funcionar en los navegadores actuales.
+
+4. ¿Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?  
+DTD (Document Type Definition) define la estructura y las reglas de un documento HTML. En HTML 4.01 existen tres DTDs:  
+- Strict  
+- Transitional  
+- Frameset
+
+5. ¿Qué son los metadatos y cómo se especifican en HTML? 
+Los metadatos son datos sobre los datos del documento (por ejemplo, autor, descripción, palabras clave). Se especifican en HTML usando la etiqueta `<meta>` dentro del `<head>`, por ejemplo:  
+<meta name="description" content="Ejemplo de metadatos en HTML">
