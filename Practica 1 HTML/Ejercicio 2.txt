@@ -1,0 +1,159 @@
+2.a)
+<!-- Código controlado el día 12/08/2009 →
+
+ -Seccion donde se coloca: Se puede colocar en cualquiera porque es un comentario.
+ -Efecto sobre el sitio: ninguno.
+ -Etiqueta: <!-- ... --> etiqueta de comentario.
+ -Atributos: no tiene.
+ -Obligatorio?: No tiene atributos.
+ -Contenido: Código controlado el día 12/08/2009.
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+
+ -Seccion donde se coloca: Se coloca dentro de la seccion Body.
+ -Efecto sobre el sitio: escribe y muestra en un bloque el contenido que se le haya añadido.
+ -Etiqueta: <div>...</div> etiqueta de bloque.
+ -Atributos:  + nombre: id | valor: "bloque1" | obligatorio: no.
+ -Contenido:Contenido del bloque1
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+longdesc="detalles.htm" />
+
+ -Seccion donde se coloca: Se coloca dentro de la seccion Body.
+ -Efecto sobre el sitio: muestra el contenido de la imagen alojada en la ruta que se coloca en source.
+ -Etiqueta: <img ...> etiqueta de imagen.
+ -Atributos:
+     + nombre: src | valor: ""(vacio) | obligatorio: si.
+     + nombre: alt | valor: "lugar imagen"  | obligatorio: no.
+      + nombre: id  | valor: "im1"    | obligatorio : no.
+     + nombre: name | valor: "im1"   | obligatorio: no.
+     + nombre: width | valor: "32"   | obligatorio: no.
+     + nombre: height | valor: "32"  | obligatorio: no.
+     + nombre: longdesc | valor: "detalles.htm"  | obligatorio: no.
+-Contenido: ninguno.
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+ -Seccion donde se coloca: Se coloca en la seccion Head.
+ -Efecto sobre el sitio: Ninguno directo, solo le da informacion sobre palabras claves al navegador y
+                         sobre una fecha de expiracion del contenido del sitio web para que el navegador
+                         vuelva a solicitarlo.
+ -Etiqueta: <meta...> etiqueta de metadatos.
+ -Atributos:
+    +Nombre: name | valor: "keywords" | obligatorio: si(en este caso, pues no esta "charset").
+    +Nombre: lang | valor: "es" | obligatorio: no.
+    +Nombre: content | valor1: "casa, compra, venta, alquiler" valor2:"16-Sep-2019 7:49 PM"   | obligatorio:con los atributos mencionados si.
+    +Nombre: http-equiv | valor "expires" | obligatorio: no.
+ -Contenido: ninguno. 
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+rel="help">Resumen HTML </a>
+
+ -Seccion donde se coloca: Se coloca en la seccion Body.
+ -Efecto sobre el sitio: agrega un hipervinculo a la pagina web bajo el texto "Resume HTML".
+ -Etiqueta: <a>...</a> etiqueta de hipervinculo.
+ -Atributos:
+     +Nombre: href | valor: "http://www.e-style.com.ar/resumen.html" | obligatorio: si.
+     +Nombre: type | valor: "text/html" | obligatorio: no.
+     +Nombre: hreflang | valor: "es" | obligatorio: no.
+     +Nombre: charset  | valor: "utf-8" | obligatorio: no.
+     +Nombre: rel | valor: "help" | obligatorio: no.
+-Contenido:Resumen HTML .
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+ -Seccion donde se coloca: Se coloca en la seccion Body.
+ -Efecto sobre el sitio: Muestra una tabla con titulo "Titulo", columnas "A","B","C"(simuladas) y filas "1º", "2º"(simuladas)
+
+ -Etiqueta_1: <table>...</table> etiqueta de tabla.
+ -Atributos:
+     +Nombre: width | valor: "200" | obligatorio: no.
+     +Nombre: summary | valor: "Datos correspondientes al ejercicio vencido" | obligatorio: no.
+ -Contenidos:
+             <caption align="top"> Título </caption>
+             <tr>
+                     <th scope="col">&nbsp;</th>
+                     <th scope="col">A</th>
+                     <th scope="col">B</th>
+                     <th scope="col">C</th>
+             </tr>
+             <tr>
+                     <th scope="row">1º</th>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+             </tr>
+             <tr>
+                     <th scope="row">2º</th>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+             </tr>
+
+ -Etiqueta_2: <caption>...</caption> etiqueta de titulo de tabla.
+ -Atributos:
+     +Nombre: align | valor: "top" | obligatorio: no.
+ -Contenido: Título.
+
+ -Etiqueta_3: <tr>...</tr> etiqueta de fila.
+ -Atributos: ninguno.
+ -Contenidos:
+     Primer aparicion:
+             <th scope="col">&nbsp;</th>
+             <th scope="col">A</th>
+             <th scope="col">B</th>
+             <th scope="col">C</th>
+                
+     Segunda aparicion:
+             <th scope="row">1º</th>
+             <td>&nbsp;</td>
+             <td>&nbsp;</td>
+             <td>&nbsp;</td>
+
+     Tercer aparicion:
+             <th scope="row">2º</th>
+             <td>&nbsp;</td>
+             <td>&nbsp;</td>
+             <td>&nbsp;</td>
+            
+ -Etiqueta_4: <th>...</th> etiqueta de cabecera de columna.
+ -Atributos:
+     +Nombre: scope | valores: ("col","row") | obligatorio: no(pero muy recomendado por cuestiones de accesibilidad.).
+ -Contenidos:
+             &nbsp
+             A
+             B
+             C
+             1º
+             2º
+            
+ -Etiqueta_5: <td>...</td> etiqueta de dato de tabla(table data).
+ -Atributos: ninguno.
+ -Contenidos:
+             &nbsp;
