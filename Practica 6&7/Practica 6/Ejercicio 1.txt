@@ -1,0 +1,38 @@
+Para comenzar la comunicación con un servidor de base de datos MySQL, 
+es necesario abrir una conexión a ese servidor. 
+Para inicializar esta conexión, PHP ofrece la función mysqli_connect()
+
+
+Todos sus parámetros son opcionales, pero hay tres de ellos que 
+generalmente son necesarios:
+Servidor, usuario y contraseña;
+
+
+Una vez abierta la conexión, se debe seleccionar una base de datos 
+para su uso, mediante la función mysqli_select_db()
+
+
+Esta función debe pasar como parámetro el enlace de conexión y el 
+nombre de la base de datos
+
+
+La función mysqli_query() se utiliza para enviar una instrucción SQL al servidor.
+
+
+Y requiere como parámetros el enlace de conexión y la consulta SQL.
+
+
+La cláusula or die() se utiliza para detener la ejecución del script si ocurre un 
+error y mostrar un mensaje.
+
+
+Y la función mysqli_error() se puede usar para mostrar el error específico 
+que generó MySQL.
+
+
+Explicación del código final:
+-mysqli_fetch_array($vResultado) → obtiene una fila del conjunto de resultados y la guarda en el array $fila.
+-El while recorre todas las filas devueltas por la consulta.
+-En cada iteración, se imprimen las columnas del registro dentro de una fila <tr> de una tabla HTML.
+-mysqli_free_result() → libera la memoria usada por el resultado.
+-mysqli_close() → cierra la conexión con la base de datos.
